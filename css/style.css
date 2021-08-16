@@ -22,10 +22,33 @@ p {
     line-height: 25px;
 }
 
-.container a {
+.container .btn1 {
     text-decoration: none;
     margin-top: 20px;
-    color: hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%);
+    background: hsl(0, 0%, 99%);
+    font-family: 'Lexend Deca', sans-serif;
+    border: hsl(0, 0%, 95%) 2px solid;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+
+.container .btn2 {
+    text-decoration: none;
+    margin-top: 20px;
+    color: hsl(184, 100%, 22%);
+    background: hsl(0, 0%, 99%);
+    font-family: 'Lexend Deca', sans-serif;
+    border: hsl(0, 0%, 95%) 2px solid;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+
+.container .btn3 {
+    text-decoration: none;
+    margin-top: 20px;
+    color: hsl(179, 100%, 13%);
+    background: hsl(0, 0%, 99%);
     font-family: 'Lexend Deca', sans-serif;
     border: hsl(0, 0%, 95%) 2px solid;
     border-radius: 20px;
@@ -43,19 +66,20 @@ p {
 
 .column1 {
     background: hsl(31, 77%, 52%);
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     padding: 40px 40px 200px;
 }
 
 .column2 {
     background: hsl(184, 100%, 22%);
-    border-radius: 5px;
     padding: 40px 40px 200px;
 }
 
 .column3 {
     background: hsl(179, 100%, 13%);
-    border-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     padding: 40px 40px 200px;
 }
 
@@ -73,6 +97,14 @@ p {
         flex-wrap: wrap;
         margin: 0 auto;
         width: 400px;
+    }
+    .column1 {
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0px;
+    }
+    .column3 {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 5px;
     }
 }
 

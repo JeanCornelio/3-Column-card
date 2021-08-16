@@ -1,0 +1,85 @@
+body {
+    Font-size: 15px
+}
+
+.container {
+    display: flex;
+    margin: 200px auto;
+    width: 900px;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-Weight: 700;
+    font-size: 40px;
+    color: hsla(0, 0%, 100%);
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-Weight: 400;
+    line-height: 25px;
+}
+
+.container a {
+    text-decoration: none;
+    margin-top: 20px;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    border: hsl(0, 0%, 95%) 2px solid;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+
+.container a:hover {
+    background: hsl(0, 0%, 100%, 0.30);
+}
+
+.buttons {
+    margin-top: 100px;
+    margin-bottom: -130px;
+}
+
+.column1 {
+    background: hsl(31, 77%, 52%);
+    border-radius: 5px;
+    padding: 40px 40px 200px;
+}
+
+.column2 {
+    background: hsl(184, 100%, 22%);
+    border-radius: 5px;
+    padding: 40px 40px 200px;
+}
+
+.column3 {
+    background: hsl(179, 100%, 13%);
+    border-radius: 5px;
+    padding: 40px 40px 200px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 400px;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
